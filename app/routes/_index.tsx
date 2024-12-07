@@ -1,4 +1,6 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Benefits } from "~/components/benefits/benefits";
+import { Hero } from "~/components/hero/hero";
 
 export const meta: MetaFunction = () => {
   return [
@@ -9,8 +11,9 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div>
-      <p>Hello</p>
-    </div>
+    <>
+      <Hero />
+      <Benefits />
+    </>
   );
 }

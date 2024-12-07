@@ -14,4 +14,8 @@
   .p-mobile {
     @apply px-4;
   }
+
+  .p-component {
+    @apply p-mobile md:p-tablet lg:p-desktop;
+  }
 }

@@ -40,7 +40,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body className="flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1 bg-red-500">{children}</main>
         <Footer />
         <ScrollRestoration />
         <Scripts />
