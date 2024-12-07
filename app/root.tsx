@@ -8,6 +8,8 @@ import {
 import type { LinksFunction } from "@remix-run/node";
 
 import "./tailwind.css";
+import { Header } from "./components/layout/header/header";
+import { Footer } from "./components/layout/footer/footer";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -24,15 +26,22 @@ export const links: LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="id">
       <head>
+        <title>Gustico</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="description"
+          content="Gustico Meneydiakan Produk Ecoprint yang berkua;itas dan terjangkau. Selain produk, Gustico juga memberikan pelayanana berupa pelatihan dalam pembuatan Ecoprint"
+        />
         <Meta />
         <Links />
       </head>
-      <body>
-        {children}
+      <body className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>

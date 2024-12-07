@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+@layer components {
+  .p-desktop {
+    @apply px-20;
+  }
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+  .p-tablet {
+    @apply px-10;
+  }
+
+  .p-mobile {
+    @apply px-4;
   }
 }
