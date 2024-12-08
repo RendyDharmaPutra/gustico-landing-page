@@ -4,7 +4,7 @@ export const Service = () => {
   return (
     <div className="relative p-component py-[40px] md:py-[60px] lg:py-[100px] flex items-center w-full h-[400px] md:h-[500px] lg:h-[600px] ">
       <img
-        src="/public/training_service.jpg"
+        src="/training_service.jpg"
         alt="Pelatihan Ecoprint"
         className="absolute inset-0 w-full h-full object-cover z-0 "
       />
