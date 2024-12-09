@@ -1,3 +1,5 @@
+import { Link } from "@remix-run/react";
+
 export const ContentService = () => {
   return (
     <div className="relative z-20 flex flex-col items-center lg:items-start gap-8 w-full lg:w-[660px] ">
@@ -8,9 +10,13 @@ export const ContentService = () => {
         Raih kesempatan belajar langsung dari para ahli dan temukan
         produk-produk inovatif berbasis bahan organik yang memperkaya hidup Anda
       </p>
-      <button className="px-5 md:px-6 lg:px-[30px] py-3 md:py-3.5 lg:py-4 rounded-full bg-background hover:bg-primary font-medium text-sm md:text-base lg:text-lg text-primary hover:text-background duration-200">
+      <Link
+        target="_blank"
+        to={"https://wa.me/+6281233303635"}
+        className="px-5 md:px-6 lg:px-[30px] py-3 md:py-3.5 lg:py-4 rounded-full bg-background hover:bg-primary font-medium text-sm md:text-base lg:text-lg text-primary hover:text-background duration-200"
+      >
         Jadwalkan Sekarang
-      </button>
+      </Link>
     </div>
   );
 };
