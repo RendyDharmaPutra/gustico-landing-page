@@ -1,17 +1,15 @@
-import { CtaHero } from "./cta_hero";
+import { ContentHero } from "./content_hero";
 
 export const Hero = () => {
   return (
-    <div className="py-5 p-component flex items-center h-[50vh] md:h-[80vh] lg:h-[90vh] bg-primary">
-      <div className="flex flex-col items-center lg:items-start gap-8 w-full lg:w-[664px] ">
-        <h3 className="font-bold text-center lg:text-left text-4xl md:text-5xl lg:text-[64px] text-background">
-          Harmoni Alam dalam Gaya
-        </h3>
-        <p className="font-medium text-center lg:text-left text-xl md:text-2xl text-background">
-          Busana berbahan alami untuk menciptakan dampak positif pada lingkungan
-        </p>
-        <CtaHero />
-      </div>
+    <div className="relative py-5 p-component flex items-center h-[50vh] md:h-[80vh] lg:h-[90vh] bg-primary">
+      <img
+        src="/hero_image.jpg"
+        alt="Pelatihan Ecoprint"
+        className="absolute inset-0 w-full h-full object-cover object-center z-0 "
+      />
+      <div className="z-10 absolute inset-0 bg-gradient-to-t from-black via-[#0b270f]/75 to-black/75 opacity-60"></div>
+      <ContentHero />
     </div>
   );
 };
