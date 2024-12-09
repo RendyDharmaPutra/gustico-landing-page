@@ -2,7 +2,7 @@ import { ContentHero } from "./content_hero";
 
 export const Hero = () => {
   return (
-    <div className="relative py-5 p-component flex items-center h-[50vh] md:h-[80vh] lg:h-[90vh] bg-primary">
+    <div className="relative py-5 p-component flex items-center h-[400px] md:h-[600px] lg:h-[90vh] bg-primary">
       <img
         src="/hero_image.jpg"
         alt="Pelatihan Ecoprint"

@@ -7,8 +7,8 @@ export const ContentService = () => {
         Kembangkan Keterampilan Baru Bersama Kami
       </h4>
       <p className="font-normal text-center lg:text-left md:text-lg lg:text-xl text-background">
-        Raih kesempatan belajar langsung dari para ahli dan temukan
-        produk-produk inovatif berbasis bahan organik yang memperkaya hidup Anda
+        Raih kesempatan belajar langsung dan temukan produk-produk inovatif
+        berbasis bahan organik yang memperkaya hidup Anda
       </p>
       <Link
         target="_blank"

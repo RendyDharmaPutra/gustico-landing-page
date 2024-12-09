@@ -9,7 +9,7 @@ export const SocialMedia = () => {
       <SocialMediaItem route="https://facebook.com/citra.anugerah.712">
         <FacebookIcon size="100" />
       </SocialMediaItem>
-      <SocialMediaItem route="https://instagram.com/cintraanugerah">
+      <SocialMediaItem route="https://instagram.com/citraanugerah">
         <InstagramIcon size="100" />
       </SocialMediaItem>
       <SocialMediaItem route="https://wa.me/+6281233303635">
