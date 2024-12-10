@@ -4,7 +4,7 @@ export const ProductGalleryCard = (props: { image: string }) => {
       <img
         src={props.image}
         alt="Produk Ecoprint"
-        className="h-full group-hover:scale-110 duration-200 bg-red-500"
+        className="h-full group-hover:scale-110 duration-200 "
       />
     </div>
   );
