@@ -8,6 +8,7 @@ type NavItemProps = {
 export const NavItem = (props: NavItemProps) => {
   return (
     <Link
+      prefetch="viewport"
       to={props.route}
       className="px-4 py-2 rounded-xl md:rounded-full hover:bg-primary/10 duration-200 "
     >

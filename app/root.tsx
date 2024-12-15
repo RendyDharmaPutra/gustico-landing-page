@@ -28,19 +28,19 @@ export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="id" className="scroll-smooth">
       <head>
-        <title>Gustico</title>
+        <title>Gustco</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Gustico Meneydiakan Produk Ecoprint yang berkua;itas dan terjangkau. Selain produk, Gustico juga memberikan pelayanana berupa pelatihan dalam pembuatan Ecoprint"
+          content="Gustco Meneydiakan Produk Ecoprint yang berkuaitas dan terjangkau. Selain produk, Gustico juga memberikan pelayanana berupa pelatihan dalam pembuatan Ecoprint"
         />
         <Meta />
         <Links />
       </head>
-      <body className="flex flex-col min-h-screen">
+      <body className="relative flex flex-col min-h-screen">
         <Header />
-        <main className="flex-1 bg-red-500">{children}</main>
+        <main className="flex-1 ">{children}</main>
         <Footer />
         <ScrollRestoration />
         <Scripts />

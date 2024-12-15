@@ -1,13 +1,20 @@
+import { Link } from "@remix-run/react";
+
 type ContactCardProps = {
   type: string;
   path: string;
+  link: string;
   name: string;
   value: string;
 };
 
 export const ContactCard = (props: ContactCardProps) => {
   return (
-    <div className="flex fle-row items-center gap-3 lg:gap-[14px] w-full md:w-fit ">
+    <Link
+      to={props.link}
+      target="_blank"
+      className="px-4 md:px-5 lg:px-6 py-3 lg:py-4 flex flex-row items-center gap-3 lg:gap-[14px] w-full md:w-fit rounded-lg hover:shadow-sm hover:bg-background duration-200"
+    >
       <div className="w-8 lg:w-12 h-8 lg:h-12 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -25,6 +32,6 @@ export const ContactCard = (props: ContactCardProps) => {
           {props.value}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };

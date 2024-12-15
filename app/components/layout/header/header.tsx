@@ -18,7 +18,7 @@ export const Header = () => {
   }, [isMobile]);
 
   return (
-    <div className="py-6 p-component flex flex-col md:flex-row justify-between gap-6 bg-background">
+    <div className="sticky top-0 left-0 right-0 z-50 py-6 p-component flex flex-col md:flex-row justify-between gap-6 shadow-lg bg-background">
       <div className="flex flex-row justify-between ">
         <NavHeadline />
         {isMobile && <NavMenu action={handleNav} />}

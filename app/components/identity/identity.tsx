@@ -17,7 +17,7 @@ export const Identity = () => {
         </p>
       </div>
       <div className="w-[300px] md:w-[400px] lg:w-[500px] h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden ">
-        <img src="owner.jpg" alt="Citra Anugerah Ecoprint" />
+        <img src="owner.png" alt="Citra Anugerah Ecoprint" />
       </div>
     </div>
   );
